@@ -12,9 +12,16 @@ string reverseString(string word){
     return reversed;
 }
 
-int main()
-{
-    string word = "letter";
-    cout << reverseString(word);
+int main(){
+    string word = "radar";
+    if (reverseString(word) == word)
+    {
+        cout << "That word is a palindrome.";
+    }
+    else
+    {
+        cout << "That word is not a palindrome.";
+    }
+    
     return 0;
 }
